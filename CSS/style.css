@@ -1,0 +1,30 @@
+:root{
+    /* CSS Fonts And Color Variables Declerations */
+    --sans:"Fira Sans", serif;
+}
+.sans{
+    font-family: var(--sans);
+}
+#input{
+    height: 2.3rem;
+    font-family: var(--sans);
+    font-size: 1.1rem;
+}
+form.border-2{
+    border-bottom: dotted !important;
+}
+#search{
+    height: 1.9rem;
+    font-family: var(--sans);
+    font-size: 1rem;
+}
+#search:focus{
+    outline: solid black 1px !important;
+}
+.fa-magnifying-glass{
+    left: 0.2rem;
+    top: 52%;
+}
+.row i{
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/to-do-list.png">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <script src="Java Script/bootstrap.bundle.min.js"></script>
+    <script src="Java Script/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="spinner" class="text-center mt-3 d-none">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        <h1 class="text-center sans mt-4 fw-bold"><a href="index.html" class="text-decoration-none text-black"><i class="fa-solid fa-clipboard-list me-3"></i>Todo App</a></h1>
+        <form class="row gy-3 justify-content-center mt-4 text-center border-bottom border-2 border-black pb-5">
+            <div class="col-12 col-md-7"><input type="text" name="input" id="input" class="col-12 px-2 rounded-1 border border-2 border-black" placeholder="Add Todo..."></div>
+            <div class="col-12 col-md-2"><button class="col-12 col-lg-10 btn btn-primary sans">Add Todo</button></div>
+            <span id="nonValid_input" class="text-danger d-none">Characters [1 -- 200]</span>
+        </form>
+        <div class="mt-4 d-flex justify-content-center justify-content-md-end">
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3 position-relative">
+                <i class="fa-solid fa-magnifying-glass position-absolute translate-middle-y text-secondary"></i>
+                <input type="text" name="search" id="search" class="col-12 px-4 rounded-1 border border-1 border-black" placeholder="search...">
+            </div>
+        </div>
+        <div id="display" class="row gy-4 mt-3">
+        </div>
+    </div>
+</body>
+</html>
